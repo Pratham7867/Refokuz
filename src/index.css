@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 1px; /* Scrollbar width */
+    border-radius: 20px; /* Rounded edges */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000; /* Black track */
+    border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333; /* Dark gray handle */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Lighter gray on hover */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #000; /* Handle color | Track color */
+  }
+  
